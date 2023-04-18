@@ -1,5 +1,6 @@
 *.log
 /SimpleTxMCDMA/SimpleTxMCDMA/*
+/SimpleRxMCDMA/SimpleRxMCDMA/*
 
 # Prerequisites
 *.d
