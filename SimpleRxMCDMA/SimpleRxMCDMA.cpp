@@ -32,7 +32,7 @@ void SimpleRxMCDMA(uint32_t* mem, dataStream_t& RX_stream, channel_descr_t chann
 			{
 				if(channel_descr[dataPkt.dest].transfered_data < channel_descr[dataPkt.dest].len)
 				{
-					mem[channel_descr[dataPkt.dest].addr + channel_descr[dataPkt.dest].transfered_data] = dataPkt.data;
+					*(mem + channel_descr[dataPkt.dest].addr + channel_descr[dataPkt.dest].transfered_data) = dataPkt.data;
 					channel_descr[dataPkt.dest].transfered_data++;
 					if(channel_descr[dataPkt.dest].transfered_data == channel_descr[dataPkt.dest].len)
 					{

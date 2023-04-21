@@ -18,8 +18,8 @@ int main()
 	for(int i = 0; i <N_CHANNELS; i++)
 	{
 		channel_descr[i].enable = true;
-		channel_descr[i].len=512;
-		channel_descr[i].addr=(uint32_t)i*512;
+		channel_descr[i].len=512*4;
+		channel_descr[i].addr=(uint32_t)i*512*4;
 		cnt[i] = i*512;
 	}
 
@@ -40,7 +40,7 @@ int main()
 			retval = -1;
 			std::cout << "Error on data." << std::endl;
 		}
-		if(dataPkt.last == 1 && dataPkt.data % 512 != 511)
+		if((dataPkt.last == 1 && dataPkt.data % 512 != 511) || (dataPkt.last == 0 && dataPkt.data % 512 == 511))
 		{
 			retval = -1;
 			std::cout << "Error on last." << std::endl;
