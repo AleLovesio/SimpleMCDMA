@@ -1,0 +1,17 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../MCDMA_TB.ip_user_files/bd/tb/ip/tb_dlmb_bram_if_cntlr_0/sim/tb_dlmb_bram_if_cntlr_0.vhd" \
+"../../../../MCDMA_TB.ip_user_files/bd/tb/ip/tb_dlmb_v10_0/sim/tb_dlmb_v10_0.vhd" \
+"../../../../MCDMA_TB.ip_user_files/bd/tb/ip/tb_ilmb_bram_if_cntlr_0/sim/tb_ilmb_bram_if_cntlr_0.vhd" \
+"../../../../MCDMA_TB.ip_user_files/bd/tb/ip/tb_ilmb_v10_0/sim/tb_ilmb_v10_0.vhd" \
+"../../../../MCDMA_TB.ip_user_files/bd/tb/ip/tb_axi_bram_ctrl_0_0/sim/tb_axi_bram_ctrl_0_0.vhd" \
+"../../../../MCDMA_TB.ip_user_files/bd/tb/ip/tb_axi_smc_0/bd_0/ip/ip_1/sim/bd_5cf0_psr_aclk_0.vhd" \
+"../../../../MCDMA_TB.ip_user_files/bd/tb/ip/tb_mdm_1_0/sim/tb_mdm_1_0.vhd" \
+"../../../../MCDMA_TB.ip_user_files/bd/tb/ip/tb_microblaze_0_0/sim/tb_microblaze_0_0.vhd" \
+"../../../../MCDMA_TB.ip_user_files/bd/tb/ip/tb_microblaze_0_axi_intc_0/sim/tb_microblaze_0_axi_intc_0.vhd" \
+"../../../../MCDMA_TB.ip_user_files/bd/tb/ip/tb_rst_clk_wiz_100M_0/sim/tb_rst_clk_wiz_100M_0.vhd" \
+"../../../../MCDMA_TB.ip_user_files/bd/tb/ip/tb_axi_uartlite_0_0/sim/tb_axi_uartlite_0_0.vhd" \
+"../../../../MCDMA_TB.ip_user_files/bd/tb/ip/tb_axi_timer_0_0/sim/tb_axi_timer_0_0.vhd" \
+
+# Do not sort compile order
+nosort

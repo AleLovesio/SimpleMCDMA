@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Apr 19 23:53:10 2023
+# Process ID: 1464
+# Current directory: E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_dlmb_bram_if_cntlr_0_synth_1
+# Command line: vivado.exe -log tb_dlmb_bram_if_cntlr_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_dlmb_bram_if_cntlr_0.tcl
+# Log file: E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_dlmb_bram_if_cntlr_0_synth_1/tb_dlmb_bram_if_cntlr_0.vds
+# Journal file: E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_dlmb_bram_if_cntlr_0_synth_1\vivado.jou
+# Running On: PC-ALESSANDRO, OS: Windows, CPU Frequency: 4700 MHz, CPU Physical cores: 12, Host memory: 16270 MB
+#-----------------------------------------------------------
+source tb_dlmb_bram_if_cntlr_0.tcl -notrace

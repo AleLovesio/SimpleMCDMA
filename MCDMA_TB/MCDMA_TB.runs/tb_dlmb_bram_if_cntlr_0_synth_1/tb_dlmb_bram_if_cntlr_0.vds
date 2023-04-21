@@ -1,0 +1,367 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Apr 19 23:53:10 2023
+# Process ID: 1464
+# Current directory: E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_dlmb_bram_if_cntlr_0_synth_1
+# Command line: vivado.exe -log tb_dlmb_bram_if_cntlr_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_dlmb_bram_if_cntlr_0.tcl
+# Log file: E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_dlmb_bram_if_cntlr_0_synth_1/tb_dlmb_bram_if_cntlr_0.vds
+# Journal file: E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_dlmb_bram_if_cntlr_0_synth_1\vivado.jou
+# Running On: PC-ALESSANDRO, OS: Windows, CPU Frequency: 4700 MHz, CPU Physical cores: 12, Host memory: 16270 MB
+#-----------------------------------------------------------
+source tb_dlmb_bram_if_cntlr_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1001.430 ; gain = 116.410
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Files/Test_benches/MCDMA_TB/IP_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: tb_dlmb_bram_if_cntlr_0
+Command: synth_design -top tb_dlmb_bram_if_cntlr_0 -part xcku025-ffva1156-1-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku025'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku025'
+INFO: [Device 21-403] Loading part xcku025-ffva1156-1-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14668
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2102.902 ; gain = 407.395
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tb_dlmb_bram_if_cntlr_0' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ip/tb_dlmb_bram_if_cntlr_0/synth/tb_dlmb_bram_if_cntlr_0.vhd:84]
+	Parameter C_FAMILY bound to: kintexu - type: string 
+	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000000111111111111111 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000110000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 1 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+	Parameter C_WRITE_ACCESS bound to: 2 - type: integer 
+	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/a177/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4514' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ip/tb_dlmb_bram_if_cntlr_0/synth/tb_dlmb_bram_if_cntlr_0.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/a177/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4639]
+	Parameter C_TARGET bound to: 5 - type: integer 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000110000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC_WIDTH bound to: 7 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_mux' declared at 'e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/a177/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3893' bound to instance 'lmb_mux_I' of component 'lmb_mux' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/a177/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4908]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/a177/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3981]
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000110000000000000000 
+INFO: [Synth 8-3491] module 'pselect_mask' declared at 'e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/a177/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3476' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/a177/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4052]
+INFO: [Synth 8-638] synthesizing module 'pselect_mask' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/a177/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3491]
+INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/a177/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3491]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/a177/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3981]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/a177/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4639]
+INFO: [Synth 8-256] done synthesizing module 'tb_dlmb_bram_if_cntlr_0' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ip/tb_dlmb_bram_if_cntlr_0/synth/tb_dlmb_bram_if_cntlr_0.vhd:84]
+WARNING: [Synth 8-7129] Port A[0] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[2] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[3] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[4] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[5] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[6] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[7] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[11] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[12] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[13] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[16] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[17] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[18] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[19] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[20] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[21] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[22] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[23] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[24] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[25] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[26] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[27] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[28] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[29] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[30] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB_Clk in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB_Rst in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[0] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[1] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[2] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[3] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[4] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[5] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[6] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[7] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[8] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[9] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[10] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[11] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[12] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[13] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[14] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[15] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[16] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[17] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[18] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[19] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[20] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[21] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[22] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[23] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[24] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[25] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[26] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[27] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[28] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[29] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[30] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[31] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[0] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[1] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[2] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[3] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[4] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[5] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[6] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[7] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[8] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[9] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[10] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[11] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[12] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[13] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[14] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[15] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[16] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[17] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[18] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[19] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[20] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[21] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[22] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[23] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[24] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[25] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[26] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[27] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[28] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[29] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[30] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[31] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_AddrStrobe in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ReadStrobe in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteStrobe in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_BE[0] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_BE[1] in module lmb_mux is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2202.574 ; gain = 507.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2202.574 ; gain = 507.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2202.574 ; gain = 507.066
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2202.574 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ip/tb_dlmb_bram_if_cntlr_0/tb_dlmb_bram_if_cntlr_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ip/tb_dlmb_bram_if_cntlr_0/tb_dlmb_bram_if_cntlr_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_dlmb_bram_if_cntlr_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_dlmb_bram_if_cntlr_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2217.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 2221.051 ; gain = 3.129
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2221.051 ; gain = 525.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku025-ffva1156-1-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2221.051 ; gain = 525.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_dlmb_bram_if_cntlr_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2221.051 ; gain = 525.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2221.051 ; gain = 525.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1152 (col length:72)
+BRAMs: 720 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2221.051 ; gain = 525.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 2315.457 ; gain = 619.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 2315.457 ; gain = 619.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 2334.551 ; gain = 639.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 2340.305 ; gain = 644.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 2340.305 ; gain = 644.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 2340.305 ; gain = 644.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 2340.305 ; gain = 644.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 2340.305 ; gain = 644.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 2340.305 ; gain = 644.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     1|
+|2     |LUT3 |     1|
+|3     |LUT5 |     4|
+|4     |FDRE |     2|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 2340.305 ; gain = 644.797
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 322 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 2340.305 ; gain = 626.320
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 2340.305 ; gain = 644.797
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2352.410 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2376.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: d7a3af94
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:29 . Memory (MB): peak = 2376.602 ; gain = 1301.918
+INFO: [Common 17-1381] The checkpoint 'E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_dlmb_bram_if_cntlr_0_synth_1/tb_dlmb_bram_if_cntlr_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP tb_dlmb_bram_if_cntlr_0, cache-ID = 7ee01242877c7a8b
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_dlmb_bram_if_cntlr_0_synth_1/tb_dlmb_bram_if_cntlr_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tb_dlmb_bram_if_cntlr_0_utilization_synth.rpt -pb tb_dlmb_bram_if_cntlr_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 19 23:54:11 2023...

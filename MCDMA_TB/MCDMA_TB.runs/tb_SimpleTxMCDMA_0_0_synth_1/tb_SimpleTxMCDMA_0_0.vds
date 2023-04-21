@@ -1,0 +1,571 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Apr 21 00:31:43 2023
+# Process ID: 9156
+# Current directory: E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_SimpleTxMCDMA_0_0_synth_1
+# Command line: vivado.exe -log tb_SimpleTxMCDMA_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_SimpleTxMCDMA_0_0.tcl
+# Log file: E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_SimpleTxMCDMA_0_0_synth_1/tb_SimpleTxMCDMA_0_0.vds
+# Journal file: E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_SimpleTxMCDMA_0_0_synth_1\vivado.jou
+# Running On: PC-ALESSANDRO, OS: Windows, CPU Frequency: 4700 MHz, CPU Physical cores: 12, Host memory: 16270 MB
+#-----------------------------------------------------------
+source tb_SimpleTxMCDMA_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Files/Test_benches/MCDMA_TB/IP_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: tb_SimpleTxMCDMA_0_0
+Command: synth_design -top tb_SimpleTxMCDMA_0_0 -part xcku025-ffva1156-1-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku025'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku025'
+INFO: [Device 21-403] Loading part xcku025-ffva1156-1-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12256
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2103.832 ; gain = 405.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tb_SimpleTxMCDMA_0_0' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ip/tb_SimpleTxMCDMA_0_0/synth/tb_SimpleTxMCDMA_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA.v:10]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_flow_control_loop_pipe_sequential_init' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_flow_control_loop_pipe_sequential_init' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_s_axi_ctrl_s_axi' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_s_axi_ctrl_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_s_axi_ctrl_s_axi_ram' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_s_axi_ctrl_s_axi.v:662]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_s_axi_ctrl_s_axi_ram' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_s_axi_ctrl_s_axi.v:662]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_s_axi_ctrl_s_axi.v:662]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_s_axi_ctrl_s_axi.v:662]
+INFO: [Synth 8-155] case statement is not full and has no default [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_s_axi_ctrl_s_axi.v:325]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_s_axi_ctrl_s_axi' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_s_axi_ctrl_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_store' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:815]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_fifo' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2721]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_srl' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2899]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_srl' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2899]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_fifo' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2721]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_fifo__parameterized0' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2721]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_mem' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2953]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_mem' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2953]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_fifo__parameterized0' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2721]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_fifo__parameterized1' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2721]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_srl__parameterized0' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2899]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_srl__parameterized0' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2899]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_fifo__parameterized1' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2721]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_fifo__parameterized2' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2721]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_srl__parameterized1' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2899]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_srl__parameterized1' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2899]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_fifo__parameterized2' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2721]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_store' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:815]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_load' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:359]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_fifo__parameterized3' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2721]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_mem__parameterized0' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2953]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_mem__parameterized0' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2953]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_fifo__parameterized3' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2721]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_load' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:359]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_write' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:1886]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_reg_slice' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2619]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_reg_slice' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2619]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_fifo__parameterized4' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2721]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_srl__parameterized2' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2899]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_srl__parameterized2' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2899]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_fifo__parameterized4' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2721]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_throttle' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2394]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_reg_slice__parameterized0' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2619]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_reg_slice__parameterized0' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2619]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_fifo__parameterized5' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2721]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_srl__parameterized3' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2899]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_srl__parameterized3' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2899]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_fifo__parameterized5' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2721]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_fifo__parameterized6' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2721]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_srl__parameterized4' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2899]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_srl__parameterized4' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2899]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_fifo__parameterized6' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2721]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_throttle' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2394]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_reg_slice__parameterized1' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2619]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_reg_slice__parameterized1' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2619]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2386]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2389]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_write' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:1886]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_read' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:1502]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_reg_slice__parameterized2' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2619]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_reg_slice__parameterized2' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:2619]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:1878]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_read' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:1502]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_mem_m_axi_flushManager' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:1364]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi_flushManager' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:1364]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_mem_m_axi' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_mem_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_regslice_both' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_regslice_both' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_regslice_both__parameterized0' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_regslice_both__parameterized0' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_regslice_both__parameterized1' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_regslice_both__parameterized1' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'SimpleTxMCDMA_regslice_both__parameterized2' [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA_regslice_both__parameterized2' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleTxMCDMA' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'tb_SimpleTxMCDMA_0_0' (0#1) [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ip/tb_SimpleTxMCDMA_0_0/synth/tb_SimpleTxMCDMA_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ipshared/cf8d/hdl/verilog/SimpleTxMCDMA_s_axi_ctrl_s_axi.v:396]
+WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module SimpleTxMCDMA_mem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[1] in module SimpleTxMCDMA_mem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[0] in module SimpleTxMCDMA_mem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module SimpleTxMCDMA_mem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module SimpleTxMCDMA_mem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[1] in module SimpleTxMCDMA_mem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[0] in module SimpleTxMCDMA_mem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module SimpleTxMCDMA_mem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[2] in module SimpleTxMCDMA_mem_m_axi_srl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[2] in module SimpleTxMCDMA_mem_m_axi_srl__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port we0[3] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port we0[2] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port we0[1] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port we0[0] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[31] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[30] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[29] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[28] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[27] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[26] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[25] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[24] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[23] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[22] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[21] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[20] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[19] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[18] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[17] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[16] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[15] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[14] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[13] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[12] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[11] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[10] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[9] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[8] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[7] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[6] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[5] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[4] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[3] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[2] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[1] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[0] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port we0[3] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port we0[2] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port we0[1] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port we0[0] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[31] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[30] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[29] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[28] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[27] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[26] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[25] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[24] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[23] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[22] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[21] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[20] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[19] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[18] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[17] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[16] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[15] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[14] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[13] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[12] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[11] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[10] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[9] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[8] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[7] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[6] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[5] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[4] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[3] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[2] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[1] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[0] in module SimpleTxMCDMA_s_axi_ctrl_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_AWREADY in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_WREADY in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_ARREADY in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_RLAST in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_RID[0] in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_RFIFONUM[8] in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_RFIFONUM[7] in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_RFIFONUM[6] in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_RFIFONUM[5] in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_RFIFONUM[4] in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_RFIFONUM[3] in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_RFIFONUM[2] in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_RFIFONUM[1] in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_RFIFONUM[0] in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_RUSER[0] in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_RRESP[1] in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_RRESP[0] in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_mem_BVALID in module SimpleTxMCDMA_SimpleTxMCDMA_Pipeline_VITIS_LOOP_17_2 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2226.203 ; gain = 527.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2226.203 ; gain = 527.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2226.203 ; gain = 527.617
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 2226.203 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ip/tb_SimpleTxMCDMA_0_0/constraints/SimpleTxMCDMA_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/Files/Test_benches/MCDMA_TB/MCDMA_TB.gen/sources_1/bd/tb/ip/tb_SimpleTxMCDMA_0_0/constraints/SimpleTxMCDMA_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_SimpleTxMCDMA_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_SimpleTxMCDMA_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2262.953 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.137 . Memory (MB): peak = 2266.242 ; gain = 3.289
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2266.242 ; gain = 567.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku025-ffva1156-1-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2266.242 ; gain = 567.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_SimpleTxMCDMA_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2266.242 ; gain = 567.656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'SimpleTxMCDMA_mem_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'SimpleTxMCDMA_mem_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'SimpleTxMCDMA_mem_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'SimpleTxMCDMA_mem_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-7082] The signal mem_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'SimpleTxMCDMA_mem_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'SimpleTxMCDMA_mem_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'SimpleTxMCDMA_mem_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'SimpleTxMCDMA_mem_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 2266.242 ; gain = 567.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 7     
+	   2 Input   20 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 21    
+	   2 Input    4 Bit       Adders := 17    
+	   2 Input    3 Bit       Adders := 7     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               64 Bit    Registers := 6     
+	               40 Bit    Registers := 3     
+	               37 Bit    Registers := 1     
+	               36 Bit    Registers := 1     
+	               34 Bit    Registers := 1     
+	               33 Bit    Registers := 3     
+	               32 Bit    Registers := 24    
+	               30 Bit    Registers := 1     
+	               20 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 11    
+	                4 Bit    Registers := 19    
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 17    
+	                1 Bit    Registers := 114   
++---RAMs : 
+	               8K Bit	(255 X 34 bit)          RAMs := 1     
+	              540 Bit	(15 X 36 bit)          RAMs := 1     
+	              128 Bit	(4 X 32 bit)          RAMs := 2     
+	               64 Bit	(2 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 2     
+	   2 Input   40 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 35    
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 2     
+	   2 Input   14 Bit        Muxes := 2     
+	  15 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 2     
+	   4 Input   12 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 9     
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 21    
+	   2 Input    4 Bit        Muxes := 18    
+	   2 Input    3 Bit        Muxes := 3     
+	   6 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 72    
+	   3 Input    2 Bit        Muxes := 15    
+	   4 Input    2 Bit        Muxes := 10    
+	   2 Input    1 Bit        Muxes := 120   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1152 (col length:72)
+BRAMs: 720 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-5784] Optimized 36 bits of RAM "mem_m_axi_U/store_unit/buff_wdata/U_fifo_mem/mem_reg" due to constant propagation. Old ram width 36 bits, new ram width 0 bits.
+WARNING: [Synth 8-5785] Removed RAM "mem_m_axi_U/store_unit/buff_wdata/U_fifo_mem/mem_reg" due to constant propagation. Write data stuck at zero 
+WARNING: [Synth 8-3332] Sequential element (mem_m_axi_U/bus_write/rs_wreq/FSM_sequential_state_reg[1]) is unused and will be removed from module SimpleTxMCDMA.
+WARNING: [Synth 8-3332] Sequential element (mem_m_axi_U/bus_write/rs_wreq/FSM_sequential_state_reg[0]) is unused and will be removed from module SimpleTxMCDMA.
+WARNING: [Synth 8-3332] Sequential element (mem_m_axi_U/bus_write/wreq_throttle/rs_req/FSM_sequential_state_reg[1]) is unused and will be removed from module SimpleTxMCDMA.
+WARNING: [Synth 8-3332] Sequential element (mem_m_axi_U/bus_write/wreq_throttle/rs_req/FSM_sequential_state_reg[0]) is unused and will be removed from module SimpleTxMCDMA.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 2271.719 ; gain = 573.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object                                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst        | s_axi_ctrl_s_axi_U/int_channel_descr_addr/mem_reg   | 4 x 32(READ_FIRST)     | W | R | 4 x 32(WRITE_FIRST)    |   | R | Port A and B     | 0      | 1      |                 | 
+|inst        | s_axi_ctrl_s_axi_U/int_channel_descr_len/mem_reg    | 4 x 32(READ_FIRST)     | W | R | 4 x 32(WRITE_FIRST)    |   | R | Port A and B     | 0      | 1      |                 | 
+|inst        | s_axi_ctrl_s_axi_U/int_channel_descr_enable/mem_reg | 2 x 32(READ_FIRST)     | W | R | 2 x 32(WRITE_FIRST)    |   | R | Port A and B     | 0      | 1      |                 | 
+|inst        | mem_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg | 255 x 34(READ_FIRST)   | W |   | 255 x 34(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      |                 | 
++------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 2330.227 ; gain = 631.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 2431.746 ; gain = 733.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object                                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst        | s_axi_ctrl_s_axi_U/int_channel_descr_addr/mem_reg   | 4 x 32(READ_FIRST)     | W | R | 4 x 32(WRITE_FIRST)    |   | R | Port A and B     | 0      | 1      |                 | 
+|inst        | s_axi_ctrl_s_axi_U/int_channel_descr_len/mem_reg    | 4 x 32(READ_FIRST)     | W | R | 4 x 32(WRITE_FIRST)    |   | R | Port A and B     | 0      | 1      |                 | 
+|inst        | s_axi_ctrl_s_axi_U/int_channel_descr_enable/mem_reg | 2 x 32(READ_FIRST)     | W | R | 2 x 32(WRITE_FIRST)    |   | R | Port A and B     | 0      | 1      |                 | 
+|inst        | mem_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg | 255 x 34(READ_FIRST)   | W |   | 255 x 34(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      |                 | 
++------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/s_axi_ctrl_s_axi_U/int_channel_descr_addr/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/s_axi_ctrl_s_axi_U/int_channel_descr_len/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/s_axi_ctrl_s_axi_U/int_channel_descr_enable/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/s_axi_ctrl_s_axi_U/int_channel_descr_enable/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 2431.746 ; gain = 733.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 2431.746 ; gain = 733.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 2431.746 ; gain = 733.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 2431.746 ; gain = 733.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 2431.746 ; gain = 733.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 2431.746 ; gain = 733.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 2431.746 ; gain = 733.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name    | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[3]  | 64     | 64         | 64     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[14] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[3]  | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[14] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__4     | mem_reg[14] | 40     | 40         | 40     | 0       | 0      | 0      | 0      | 
+|dsrl__5     | mem_reg[14] | 37     | 37         | 37     | 0       | 0      | 0      | 0      | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |    27|
+|2     |LUT1     |    71|
+|3     |LUT2     |    67|
+|4     |LUT3     |   272|
+|5     |LUT4     |   144|
+|6     |LUT5     |   126|
+|7     |LUT6     |   127|
+|8     |MUXF7    |     8|
+|9     |RAMB18E2 |     1|
+|10    |RAMB36E2 |     3|
+|12    |SRL16E   |    63|
+|13    |FDRE     |   811|
+|14    |FDSE     |     6|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 2431.746 ; gain = 733.160
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 2431.746 ; gain = 693.121
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 2431.746 ; gain = 733.160
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2431.746 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2431.746 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: f4df4481
+INFO: [Common 17-83] Releasing license: Synthesis
+116 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:38 . Memory (MB): peak = 2431.746 ; gain = 1356.855
+INFO: [Common 17-1381] The checkpoint 'E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_SimpleTxMCDMA_0_0_synth_1/tb_SimpleTxMCDMA_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP tb_SimpleTxMCDMA_0_0, cache-ID = fff5ca35b54288c5
+INFO: [Coretcl 2-1174] Renamed 26 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_SimpleTxMCDMA_0_0_synth_1/tb_SimpleTxMCDMA_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tb_SimpleTxMCDMA_0_0_utilization_synth.rpt -pb tb_SimpleTxMCDMA_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 21 00:32:29 2023...

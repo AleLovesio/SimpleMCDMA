@@ -1,0 +1,5 @@
+tb_sim_sim_clk_gen_0_0.v,verilog,xil_defaultlib,../../../bd/tb_sim/ip/tb_sim_sim_clk_gen_0_0/sim/tb_sim_sim_clk_gen_0_0.v,
+tb_sim_xlconstant_0_0.v,verilog,xil_defaultlib,../../../bd/tb_sim/ip/tb_sim_xlconstant_0_0/sim/tb_sim_xlconstant_0_0.v,
+tb_sim_tb_wrapper_0_0.v,verilog,xil_defaultlib,../../../bd/tb_sim/ip/tb_sim_tb_wrapper_0_0/sim/tb_sim_tb_wrapper_0_0.v,
+tb_sim.v,verilog,xil_defaultlib,../../../bd/tb_sim/sim/tb_sim.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

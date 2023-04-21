@@ -1,0 +1,1 @@
+vopt +acc=npr -l elaborate.log  -L xil_defaultlib -L xilinx_vip -L xpm -L sim_clk_gen_v1_0_3 -L xlconstant_v1_1_7 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.tb_sim xil_defaultlib.glbl -o tb_sim_opt
