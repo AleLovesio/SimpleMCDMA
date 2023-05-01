@@ -28,14 +28,17 @@ int main()
 				dataPkt.last = 0;
 			}
 			dataStream.write(dataPkt);
+			std::cout << "Writing packet #" << len << "on channel #" << i <<"." << std::endl;
 		}
 	}
+	std::cout << dataStream.empty() << std::endl;
 	for(int i = 0; i < N_CHANNELS; i++)
 	{
 		channel_descr[i].enable = true;
-		channel_descr[i].len=512;
-		channel_descr[i].addr=(uint32_t)i*512;
+		channel_descr[i].len=512*4;
+		channel_descr[i].addr=(uint32_t)i*512*4;
 		cnt[i] = i*512;
+		std::cout << "Configuring channel #" << i <<"." << std::endl;
 	}
 
 	std::cout << "Starting IP Core." << std::endl;
@@ -57,7 +60,7 @@ int main()
 			else
 			{
 				retval = -1;
-				std::cout << "Error on data." << std::endl;
+				std::cout << "Error on data. Obtained: " << data[512*i + j] << "Expected: "<< cnt[i] << std::endl;
 			}
 		}
 		if(channel_descr[i].error)

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="tb_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="tb_xbar_5_synth_1" LaunchDir="E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_xbar_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="tb_microblaze_0_axi_intc_0_synth_1" LaunchDir="E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_microblaze_0_axi_intc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="tb_axi_timer_0_0_synth_1" LaunchDir="E:/Files/Test_benches/MCDMA_TB/MCDMA_TB.runs/tb_axi_timer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

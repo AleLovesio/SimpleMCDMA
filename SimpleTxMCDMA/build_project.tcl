@@ -11,5 +11,5 @@ set_clock_uncertainty 1
 csim_design -clean
 csynth_design
 cosim_design
-export_design -rtl verilog -format ip_catalog -output E:/Files/IP_Cores/SimpleTxMCDMA/SimpleTxMCDMA.zip
+export_design -rtl verilog -format ip_catalog -output ../SimpleTxMCDMA.zip
 exit

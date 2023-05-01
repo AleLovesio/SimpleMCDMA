@@ -1,0 +1,9 @@
+verilog xil_defaultlib --include "E:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../bd/tb_sim/ip/tb_sim_sim_clk_gen_0_0/sim/tb_sim_sim_clk_gen_0_0.v" \
+"../../../bd/tb_sim/ip/tb_sim_xlconstant_0_0/sim/tb_sim_xlconstant_0_0.v" \
+"../../../bd/tb_sim/ip/tb_sim_tb_wrapper_0_0/sim/tb_sim_tb_wrapper_0_0.v" \
+"../../../bd/tb_sim/sim/tb_sim.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
