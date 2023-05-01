@@ -18,7 +18,7 @@ int main()
 			dataPkt_t dataPkt;
 			dataPkt.data = 512*i + len;
 			dataPkt.dest = i;
-
+			dataPkt.keep = 0xf;
 			if(len == 511)
 			{
 				dataPkt.last = 1;
@@ -28,7 +28,7 @@ int main()
 				dataPkt.last = 0;
 			}
 			dataStream.write(dataPkt);
-			std::cout << "Writing packet #" << len << "on channel #" << i <<"." << std::endl;
+			std::cout << "Writing packet #" << len << " on channel #" << i <<"." << std::endl;
 		}
 	}
 	std::cout << dataStream.empty() << std::endl;
@@ -60,7 +60,7 @@ int main()
 			else
 			{
 				retval = -1;
-				std::cout << "Error on data. Obtained: " << data[512*i + j] << "Expected: "<< cnt[i] << std::endl;
+				std::cout << "Error on data. Obtained: " << data[512*i + j] << " Expected: "<< cnt[i] << std::endl;
 			}
 		}
 		if(channel_descr[i].error)
