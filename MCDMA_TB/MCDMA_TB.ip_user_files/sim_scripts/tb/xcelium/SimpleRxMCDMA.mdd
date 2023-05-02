@@ -7,11 +7,11 @@ OPTION psf_version = 2.1;
 
 BEGIN driver SimpleRxMCDMA
 
- OPTION supported_peripherals = (SimpleRxMCDMA_v0_3 );
+ OPTION supported_peripherals = (SimpleRxMCDMA_v0_4 );
  OPTION driver_state = ACTIVE;
  OPTION copyfiles = all;
  OPTION name = SimpleRxMCDMA;
- OPTION version = 0.3;
+ OPTION version = 0.4;
 
 END driver
 
