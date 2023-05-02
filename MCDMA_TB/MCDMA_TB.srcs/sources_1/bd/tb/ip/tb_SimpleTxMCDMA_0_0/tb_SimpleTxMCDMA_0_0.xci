@@ -3,7 +3,7 @@
   "ip_inst": {
     "xci_name": "tb_SimpleTxMCDMA_0_0",
     "cell_name": "SimpleTxMCDMA_0",
-    "component_reference": "AlessandroLovesio:AL_lib:SimpleTxMCDMA:0.3",
+    "component_reference": "AlessandroLovesio:AL_lib:SimpleTxMCDMA:0.4",
     "ip_revision": "0",
     "gen_directory": "../../../../../../MCDMA_TB.gen/sources_1/bd/tb/ip/tb_SimpleTxMCDMA_0_0",
     "parameters": {
@@ -247,7 +247,7 @@
           "parameters": {
             "NUM_READ_OUTSTANDING": [ { "value": "16", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "NUM_WRITE_OUTSTANDING": [ { "value": "16", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
-            "MAX_READ_BURST_LENGTH": [ { "value": "16", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "MAX_READ_BURST_LENGTH": [ { "value": "128", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "MAX_WRITE_BURST_LENGTH": [ { "value": "16", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "MAX_BURST_LENGTH": [ { "value": "256", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "PROTOCOL": [ { "value": "AXI4", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],

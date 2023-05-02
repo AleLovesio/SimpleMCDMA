@@ -58,20 +58,20 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="19"/>
+    <Option Name="WTXSimLaunchSim" Val="20"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="16"/>
-    <Option Name="WTModelSimExportSim" Val="16"/>
-    <Option Name="WTQuestaExportSim" Val="16"/>
+    <Option Name="WTXSimExportSim" Val="18"/>
+    <Option Name="WTModelSimExportSim" Val="18"/>
+    <Option Name="WTQuestaExportSim" Val="18"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="16"/>
-    <Option Name="WTRivieraExportSim" Val="16"/>
-    <Option Name="WTActivehdlExportSim" Val="16"/>
+    <Option Name="WTVcsExportSim" Val="18"/>
+    <Option Name="WTRivieraExportSim" Val="18"/>
+    <Option Name="WTActivehdlExportSim" Val="18"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -95,11 +95,26 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_dlmb_bram_if_cntlr_0/tb_dlmb_bram_if_cntlr_0.xci">
-          <Proxy FileSetName="tb_dlmb_bram_if_cntlr_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_axi_bram_ctrl_0_0/tb_axi_bram_ctrl_0_0.xci">
           <Proxy FileSetName="tb_axi_bram_ctrl_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_blk_mem_gen_0_0/tb_blk_mem_gen_0_0.xci">
+          <Proxy FileSetName="tb_blk_mem_gen_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_rst_clk_wiz_100M_0/tb_rst_clk_wiz_100M_0.xci">
+          <Proxy FileSetName="tb_rst_clk_wiz_100M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_microblaze_0_axi_intc_0/tb_microblaze_0_axi_intc_0.xci">
+          <Proxy FileSetName="tb_microblaze_0_axi_intc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_xbar_5/tb_xbar_5.xci">
+          <Proxy FileSetName="tb_xbar_5"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_axi_timer_0_0/tb_axi_timer_0_0.xci">
+          <Proxy FileSetName="tb_axi_timer_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_axi_uartlite_0_0/tb_axi_uartlite_0_0.xci">
+          <Proxy FileSetName="tb_axi_uartlite_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_SimpleRxMCDMA_0_0/tb_SimpleRxMCDMA_0_0.xci">
           <Proxy FileSetName="tb_SimpleRxMCDMA_0_0"/>
@@ -107,23 +122,8 @@
         <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_SimpleTxMCDMA_0_0/tb_SimpleTxMCDMA_0_0.xci">
           <Proxy FileSetName="tb_SimpleTxMCDMA_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_blk_mem_gen_0_0/tb_blk_mem_gen_0_0.xci">
-          <Proxy FileSetName="tb_blk_mem_gen_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_xbar_5/tb_xbar_5.xci">
-          <Proxy FileSetName="tb_xbar_5"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_rst_clk_wiz_100M_0/tb_rst_clk_wiz_100M_0.xci">
-          <Proxy FileSetName="tb_rst_clk_wiz_100M_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_axi_uartlite_0_0/tb_axi_uartlite_0_0.xci">
-          <Proxy FileSetName="tb_axi_uartlite_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_axi_timer_0_0/tb_axi_timer_0_0.xci">
-          <Proxy FileSetName="tb_axi_timer_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_microblaze_0_axi_intc_0/tb_microblaze_0_axi_intc_0.xci">
-          <Proxy FileSetName="tb_microblaze_0_axi_intc_0"/>
+        <CompFileExtendedInfo CompFileName="tb.bd" FileRelPathName="ip/tb_dlmb_bram_if_cntlr_0/tb_dlmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="tb_dlmb_bram_if_cntlr_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/tb/hdl/tb_wrapper.v">
@@ -171,7 +171,7 @@
       <File Path="$PSRCDIR/sim_1/imports/Debug/MCDMA_TB_project.elf">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Vitis_workspaces/MCDMA_TB_WS/MCDMA_TB_project/Debug/MCDMA_TB_project.elf"/>
-          <Attr Name="ImportTime" Val="1682031552"/>
+          <Attr Name="ImportTime" Val="1682986174"/>
           <Attr Name="UsedIn" Val="simulation"/>
           <Attr Name="ScopedToRef" Val="tb"/>
           <Attr Name="ScopedToCell" Val="microblaze_0"/>
